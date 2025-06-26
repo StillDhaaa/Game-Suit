@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan DOM 2</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main
+      class="flex h-dvh flex-col items-center justify-center bg-[url(./img/bg.png)]"
+    >
+      <h1
+        class="mb-2 text-center text-[45px] font-bold text-orange-800 text-shadow-amber-950 text-shadow-md max-sm:-mt-10"
+      >
+        GAME SUIT JAWA
+      </h1>
+      <!-- Area bermain -->
+      <div class="relative mb-3 h-4/5 w-[80%]">
+        <!-- Player -->
+        <div
+          class="mb-1 flex h-1/2 flex-col items-center justify-center rounded-t-4xl bg-gradient-to-b from-cyan-300 to-cyan-500"
+          id="player"
+        >
+          <h1
+            id="input"
+            class="absolute top-5 text-2xl font-bold text-neutral-900 uppercase"
+          >
+            Silahkan memilih
+          </h1>
+          <div
+            class="mt-3 flex w-full flex-row items-center justify-center max-sm:flex-wrap max-sm:justify-around"
+          >
+            <img
+              src="./src/img/gajah.png"
+              class="m-2 w-30 rounded-full shadow-2xl transition-all duration-250 ease-in-out hover:scale-110 active:scale-95 disabled:cursor-not-allowed max-sm:h-25 max-sm:w-25"
+              alt="gajah"
+            />
+
+            <img
+              src="./src/img/orang.png"
+              class="m-2 w-30 rounded-full shadow-2xl transition-all duration-250 ease-in-out hover:scale-110 active:scale-95 max-sm:h-25 max-sm:w-25"
+              alt="orang"
+            />
+            <img
+              src="./src/img/semut.png"
+              class="m-2 w-30 rounded-full shadow-2xl transition-all duration-250 ease-in-out hover:scale-110 active:scale-95 max-sm:h-25 max-sm:w-25"
+              alt="semut"
+            />
+          </div>
+        </div>
+        <!-- Computer -->
+        <div
+          class="mt-1 flex h-1/2 items-center justify-center rounded-b-4xl bg-gradient-to-t from-green-300 to-green-500"
+          id="komputer"
+        >
+          <img src="./src/img/komputer.png" class="w-32" />
+        </div>
+        <h1
+          id="output"
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 text-center text-2xl font-bold text-neutral-900 uppercase"
+        >
+          Komputer
+        </h1>
+        <!-- Info -->
+        <div
+          class="absolute top-1/2 left-1/2 z-10 flex h-12 w-40 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-4xl border-5 border-amber-600 bg-white text-center text-xl font-bold text-neutral-600 uppercase"
+          id="info"
+        >
+          INFO
+        </div>
+      </div>
+      <footer class="absolute bottom-0">
+        CODE INSPIRED and IMAGE BY
+        <a
+          class="text-blue-500"
+          href="https://www.youtube.com/watch?v=3t9hlI0JrOM&t=2062s"
+          >WPU</a
+        >
+      </footer>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
