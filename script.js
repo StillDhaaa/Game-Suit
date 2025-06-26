@@ -1,6 +1,5 @@
 const player = document.getElementById("player");
 const user = player.querySelectorAll("img");
-const img = player.querySelector("button");
 const docCom = document.getElementById("komputer");
 const info = document.getElementById("info");
 const input = document.getElementById("input");
